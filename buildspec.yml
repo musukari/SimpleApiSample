@@ -8,6 +8,6 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn package -DskipTests=true
-  artifacts:
-    files:
-      - SimpleApiSample/target/SimpleApiSample-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+    - SimpleApiSample/target/SimpleApiSample-0.0.1-SNAPSHOT.jar

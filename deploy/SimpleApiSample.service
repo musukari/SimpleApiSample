@@ -1,0 +1,11 @@
+[Unit]
+Description = SimpleApiSample
+After = syslog.target
+
+[Service]
+ExecStart = /var/SimpleApiSample/SimpleApiSample-0.0.1-SNAPSHOT.jar
+Restart = always
+Type = simple
+User = root
+Group = root
+SuccessExitStatus = 143

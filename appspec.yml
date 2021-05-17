@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: ./SimpleApiSample-0.0.1-SNAPSHOT.jar
+    destination: /var/SimpleApiSample/
+hooks:
+  ApplicationStop:
+    - location: stopapp.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: startapp.sh
+      timeout: 300
+      runas: root

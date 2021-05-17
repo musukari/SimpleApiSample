@@ -1,8 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: ./SimpleApiSample-0.0.1-SNAPSHOT.jar
+  - source: SimpleApiSample-0.0.1-SNAPSHOT.jar
     destination: /var/SimpleApiSample/
+  - source: deploy/SimpleApiSample.service
+    destination: /etc/systemd/system/
 hooks:
   ApplicationStop:
     - location: stopapp.sh

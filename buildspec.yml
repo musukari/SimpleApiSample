@@ -16,7 +16,7 @@ phases:
       - echo Nothing to do in this phase
 artifacts:
   files:
-    - target/SimpleApiSample-0.0.1-SNAPSHOT.jar
+    - SimpleApiSample-0.0.1-SNAPSHOT.jar
     - appspec.yml
     - deploy/*
 cache:

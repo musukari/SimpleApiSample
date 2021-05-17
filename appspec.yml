@@ -7,10 +7,10 @@ files:
     destination: /etc/systemd/system/
 hooks:
   ApplicationStop:
-    - location: stopapp.sh
+    - location: deploy/stopapp.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: startapp.sh
+    - location: deploy/startapp.sh
       timeout: 300
       runas: root
